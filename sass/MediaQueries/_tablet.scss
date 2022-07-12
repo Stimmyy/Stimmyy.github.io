@@ -1,0 +1,44 @@
+@media screen and (min-width:768px)
+{
+
+    .Cards
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        gap:1px;
+
+        &--line{
+            display:flex;
+            flex-flow:row nowrap;
+            margin:1px;
+        }    
+    }
+
+    .card
+    {
+        width:calc(50% - 10px);
+        margin:5px;
+
+            &--thumbnail
+            {
+                width:100%;
+            }
+
+            &--badge
+            {
+                position:relative;
+                right:1px;
+                padding:4px;
+            }
+
+            &--likenew
+            {   
+                position:relative;
+                top:-7px;
+                right:10px;
+                font-size:35px;
+            }     
+    }
+
+
+}

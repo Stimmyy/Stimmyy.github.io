@@ -1,0 +1,140 @@
+.loader
+{
+position: fixed;
+height: 100%;
+width: 100%;
+left: 0;
+top: 0;
+background-color: rgba(255, 255, 255, 0.90);
+z-index: 1000;
+display:flex;
+align-items:center;
+justify-content:center;
+animation: loader 500ms ease-in-out 2000ms forwards;
+
+    &--arrow
+    {
+    font-size:50px;
+    vertical-align: middle;
+    position: absolute;
+    top:50%;
+    left:50%;
+    animation: rotate 1500ms ease-in-out infinite;
+    }
+  
+}
+  
+
+
+.localisation
+{
+    display:flex;
+    justify-content: center;
+    padding:15px 15px;
+    font-size:20px;
+    background-color:#EAEAEA;
+   
+    &--icon
+    {
+        margin-right:15px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--text
+    {
+        font-weight:600;
+    }
+}
+
+.about
+{
+    padding:40px;
+    text-align: center;
+    background-color:$color-background;
+
+    &--title
+    {
+        margin:0;
+    }
+
+    &--content
+    {
+        margin:15px 0 50px 0;
+    }
+
+    &--btn 
+    {
+        display:block;
+        margin:auto;
+        width:max-content;
+        @include button (primary); 
+    }
+}
+
+.tuto
+{
+    margin-bottom:40px;
+
+    &--title{
+        margin-left:40px;
+    }
+
+    &--item{
+        @include tuto--btn;
+    }
+
+    &--number{
+        @include tuto--number;
+    }
+}
+
+.restaurants 
+{
+    padding:36px 18px;
+    background-color: $color-background;
+
+        &--container
+        {
+        min-width: 10px;
+        min-height: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        gap: 20px;
+        }
+}
+
+.card
+{
+    @include Homepage--Card;
+        
+        &--like
+        {
+            @include heart;
+        }
+}
+
+.localisation 
+{
+    background: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    box-shadow: inset 0 7px 9px -7px rgb(0 0 0 / 40%);
+
+        &--input
+        {
+            border:none;
+            background: #eaeaea;
+            padding: 10px 5px 10px 5px;
+            margin-top: 5px;
+            text-align: center;
+            width: 200px;
+            font-size:20px;
+        }
+}
+
+

@@ -1,0 +1,20 @@
+$police-titre:'Shrikhand', 'Arial', 'Serif';
+$police-texte: 'Roboto', 'Arial', 'Serif';
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$color-background:#F6F6F6;
+
+@use "sass:color";
+
+@font-face
+{
+  font-family:'Shrikhand';
+  src:url("../../Fonts/Shrikhand/Shrikhand-Regular.ttf")
+}
+
+@font-face
+{
+  font-family:'Roboto';
+  src:url("../../Fonts/Roboto/Roboto-Regular.ttf")
+}

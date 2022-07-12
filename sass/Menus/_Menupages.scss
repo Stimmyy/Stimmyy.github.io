@@ -1,0 +1,164 @@
+.menuheader
+{
+    &--logo
+    {
+        display:flex;
+        justify-content: center;
+        margin:auto;
+    }
+
+    &--return
+    {
+        position:absolute;
+        top:20px;
+        left:25px;
+
+        font-size:20px;
+    }
+}
+
+
+.Restaurant--image
+{
+    max-height:600px;
+    width:100%;
+    object-fit:cover;
+}
+
+.menu
+{
+    z-index: 1;
+    border-radius: 20px 20px 0 0;
+    position:relative;
+    background-color:$color-background;
+    margin-top:-70px;
+    padding:0 15px;
+    
+
+        &--header
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin:0px 10px 0px 10px;
+            padding:5px;
+        }
+
+        &--title
+        {
+            padding:10px;
+            font-family:$police-titre;
+        }
+    
+}
+
+.line
+{
+    margin-top:1px;
+    @include subtitle--line;
+}
+
+
+.menuItem
+{
+  display:flex;
+  padding:6px;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+  margin:15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  max-width: 100%;
+  animation: menuload 1000ms ease-in-out;
+  
+
+    &--header
+    {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;        
+    }
+
+    &--price
+    {
+      height:36px;
+      width:36px;
+      margin-right:10px;
+      padding:0;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+    &--confirmation
+    {
+      background-color: $color-tertiary;
+      padding:12px;
+      margin: -18px -90px -18px 18px;
+      width: 72px;
+      display:flex;
+      align-items:center;
+      transition-duration: 500ms;
+    }
+  
+    &:hover &--confirmation 
+    {
+      margin-right: -18px;
+    }
+  
+    &--wrapIcon 
+    {
+      position:relative;
+      right: -2px;
+      height: 28px;
+      width: 28px;
+      background-color: white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius: 100px;
+      transform: rotate(-360deg);
+      transition-delay:100ms;
+      transition-duration: 500ms;
+    }
+  
+    &:hover &--wrapIcon {
+      transform: rotate(0);
+    }
+  
+    &--icon {
+      color: $color-tertiary;
+    }
+}
+
+
+@for $i from 0 to 10 
+{
+  .delay--#{$i} 
+  {
+    animation-delay:  #{$i/10}s;
+  }
+}
+
+
+.command
+{
+    display:flex;
+    justify-content: center;
+    padding:30px 0 50px 0;
+
+    &--Btn
+    {
+        @include button(primary);
+    }
+}
+
+
+

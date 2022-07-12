@@ -1,0 +1,107 @@
+@media screen and(min-width:1015px)
+{
+
+    main
+    {
+        max-width:1440px;
+        margin:0 auto;
+    }
+
+
+    .tuto
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        margin:15px 0 15px 0;
+
+        &--container
+        {
+            display:flex;
+        }
+
+        &--list
+        {
+            display:flex;
+            flex-flow: row nowrap;
+            margin:auto;
+            gap:100px;
+            
+        }
+
+        &--item
+        {
+            padding:15px 50px 15px 50px;
+            font-size:14px;    
+        }   
+
+    }
+
+
+    .Cards
+    {
+        display:flex;
+        flex-flow:column nowrap;
+        gap:1px;
+
+        &--line
+        {
+            display:flex;
+            flex-flow:row nowrap;
+            margin:1px;
+        }
+    
+    }
+
+    .card
+    {
+
+        width:calc(50% - 10px);
+        margin:5px;
+
+        &--thumbnail
+        {
+            width:100%;
+        }
+
+        &--badge
+        {
+            position:relative;
+            right:1px;
+            padding:4px;
+        }
+
+        &--likenew
+        {   
+            position:relative;
+            bottom:7px;
+            right:10px;
+            font-size:35px;
+        }
+      
+    }
+
+
+
+    .menu
+    {
+        &--header
+        {
+            justify-content: space-between;
+        }
+    }
+
+
+    .sous-menus
+    {
+        display:flex;
+        flex-flow:row nowrap;
+    }
+
+    .sous-menu
+    {
+        display:flex;
+        flex-flow: column nowrap;
+        flex:1 1 26%;
+        margin:20px;
+    }
+}
